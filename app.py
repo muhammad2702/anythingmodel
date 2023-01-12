@@ -9,9 +9,9 @@ import os
 # Load your model to GPU as a global variable here using the variable name "model"
 def init():
     global model
-    HF_AUTH_TOKEN = os.getenv("HF_AUTH_TOKEN")
+    HF_AUTH_TOKEN = os.getenv("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")
     
-    repo_id = "stabilityai/stable-diffusion-2"
+    repo_id = "Linaqruf/anything-v3.0"
 
     scheduler = EulerDiscreteScheduler.from_pretrained(repo_id, subfolder="scheduler", prediction_type="v_prediction")
 

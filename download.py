@@ -9,10 +9,10 @@ import os
 def download_model():
     # do a dry run of loading the huggingface model, which will download weights at build time
     #Set auth token which is required to download stable diffusion model weights
-    HF_AUTH_TOKEN = os.getenv("HF_AUTH_TOKEN")
+    HF_AUTH_TOKEN = os.getenv("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")
 
 
-    repo_id = "stabilityai/stable-diffusion-2"
+    repo_id = "Linaqruf/anything-v3.0"
 
     scheduler = EulerDiscreteScheduler.from_pretrained(repo_id, subfolder="scheduler", prediction_type="v_prediction")
 
